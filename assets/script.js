@@ -147,7 +147,7 @@ $(document).ready(function () {
     $temp.val(elHtml).select();
     document.execCommand("copy");
     $temp.remove();
-    $.bootstrapGrowl("HTML generated with success!", { type: 'success', width: 350 });
+    $.bootstrapGrowl("HTML gerado com sucesso!", { type: 'success', width: 350 });
     $('#frameHTML').contents().find('#template-text p').css('margin-top', '-18px');
   });
 
