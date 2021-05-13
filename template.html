@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="cache-control" content="no-cache" />
 
-    <title>Gerador de E-mails</title>
+    <title>E-mail Generator</title>
     <link rel="shortcut icon" href="assets/favicon.ico">
 
     <!-- Required meta tags -->
@@ -26,15 +26,15 @@
 
       <div id="sidebar-wrapper">
         <div id="form-editor">
-          <h6>Cabeçalho</h6>
+          <h6>Header</h6>
           <div class="select">
             <select id="header">
-              <option id="empty" value="">Escolha uma opção</option>
+              <option id="empty" value="">Choose here</option>
             </select>
             <div class="select__arrow"></div>
           </div>
 
-          <h6>Título da Imagem</h6>
+          <h6>Image title</h6>
           <div class="select">
             <select id="title">
               <option id="empty" value="">Choose here</option>
@@ -42,28 +42,28 @@
             <div class="select__arrow"></div>
           </div>
 
-          <h6>Mensagem</h6>
+          <h6>Message</h6>
           <div id="editor">
           </div>
 
-          <h6 class='switch-label'>Inserir botão com link?</h6>
+          <h6 class='switch-label'>Call-to-action Button</h6>
           <label class="switch">
             <input id="action-button" type="checkbox" checked="checked">
             <span class="slider round"></span>
           </label>
 
           <div id="button-info">
-            <h6>Texto do Botão</h6>
-            <input id="input-button" type="text" placeholder="Escreva aqui o texto">
+            <h6>Button text</h6>
+            <input id="input-button" type="text" placeholder="Write here your button text">
 
-            <h6>Link do Botão</h6>
-            <input id="input-link" type="text" placeholder="Coloque aqui o link desejado">
+            <h6>Button link</h6>
+            <input id="input-link" type="text" placeholder="Place here a link to redirect">
             <hr>
           </div>
 
 
-          <h6>Cumprimentos / Despedidas</h6>
-          <input id="input-regards" type="text" placeholder="Escreva aqui seus cumprimentos">
+          <h6>Regards</h6>
+          <input id="input-regards" type="text" placeholder="Write here your regards">
         </div>
       </div>
 
@@ -71,10 +71,10 @@
       <div id="page-content-wrapper">
         <div class="container-fluid">
           <a href="#menu-toggle" class="btn hide" id="menu-toggle">
-            <span id="toggle-button" class="mdi mdi-fullscreen" data-toggle="tooltip" data-placement="right" data-delay='{"show":"200"}' title="Escolha entre Tela Cheia e Tela Dividida como visualização"></span>
+            <span id="toggle-button" class="mdi mdi-fullscreen" data-toggle="tooltip" data-placement="right" data-delay='{"show":"200"}' title="Choose full screen or split screen to visualize"></span>
           </a>
           <a href="#" class="btn hide">
-            <span id="clipboard-button" class="mdi mdi-clipboard-outline" data-toggle="tooltip" data-placement="right" data-delay='{"show":"200"}' title="Copie o código HTML do seu e-mail para a área de transferência"></span>
+            <span id="clipboard-button" class="mdi mdi-clipboard-outline" data-toggle="tooltip" data-placement="right" data-delay='{"show":"200"}' title="Copy the HTML e-mail to your clipboard"></span>
           </a>
           <a href="#" class="btn hide">
             <span id="download-button" class="mdi mdi-download" data-toggle="tooltip" data-placement="right" data-delay='{"show":"200"}' title="Download the HTML template to your files"></span>
