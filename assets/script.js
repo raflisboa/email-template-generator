@@ -47,7 +47,7 @@ $(document).ready(function () {
   ];
 
   var quill = new Quill('#editor', {
-    placeholder: 'Write your message here...',
+    placeholder: 'Escreva sua mensagem aqui...',
     modules: {
       toolbar: toolbarOptions
     },
@@ -113,7 +113,7 @@ $(document).ready(function () {
     if (this.value)
       $("#frameHTML").contents().find('#template-regards').html('<br/><br/>' + this.value);
     else
-      $("#frameHTML").contents().find('#template-regards').html('<br/><br/>Regards, Stéfano Girardelli ❤');
+      $("#frameHTML").contents().find('#template-regards').html('<br/><br/>Atencionsamente, Rafael Lisboa ❤');
   })
 
   // Export file HTML
@@ -129,12 +129,12 @@ $(document).ready(function () {
 
   // Download button
   $('#download-button').click(function () {
-    var filename = prompt("Write down the name you want to save your file:", "");
+    var filename = prompt("Escreva abaixo o nome do seu arquivo para salvá-lo:", "");
     if (filename != null) {
       downloadInnerHTML(filename + '.html', 'html', 'text/html');
-      $.bootstrapGrowl("Your HTML file was downloaded with success!", { type: 'success', width: 350 });
+      $.bootstrapGrowl("Seu arquivo HTML foi salvo com sucesso!", { type: 'success', width: 350 });
     } else {
-      $.bootstrapGrowl("Please, choose a filename to save", { type: 'danger', width: 350 });
+      $.bootstrapGrowl("Por favor, escolha um nome para seu arquivo", { type: 'danger', width: 350 });
     }
   });
 
