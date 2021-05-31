@@ -42,7 +42,7 @@ $(document).ready(function () {
     ['bold', 'italic', 'underline', 'strike'],
     [{ 'color': ['#717171', '#41b9bb', '#003A60', '#ea4943', '#f6a323', '#4990e2'] }],
     [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-    // [{ 'align': ['', 'center', 'right'] }],
+    [{ 'align': ['', 'center', 'right'] }],
     ['link', 'image']
   ];
 
@@ -89,8 +89,6 @@ $(document).ready(function () {
       $('#button-info').fadeOut();
     }
   });
-
-
 
   // Change button text
   $('#input-button').on('input', function (e) {
